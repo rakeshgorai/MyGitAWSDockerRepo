@@ -12,6 +12,7 @@ phases:
     commands:
       - echo login in to docker
       - docker login -u gorairakesh -p $LOGIN_PASSWORD
+      - printenv
       - echo starting docker daemon
       - systemctl start docker
   build:
