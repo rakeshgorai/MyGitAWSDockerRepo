@@ -11,7 +11,7 @@ phases:
   pre_build:
     commands:
       - echo login in to docker
-      - docker login -u User -p $LOGIN_PASSWORD
+      - docker login -u gorairakesh -p $LOGIN_PASSWORD
   build:
     commands:
       - echo Build started on `date`
