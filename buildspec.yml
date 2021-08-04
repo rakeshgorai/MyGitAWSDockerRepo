@@ -6,7 +6,7 @@ env:
     IMAGE_TAG: 1.0
   parameter-store:
     LOGIN_PASSWORD: /Codebuild/DockerPassword
-    LOGIN_ID: /Codebuild/DockerPassword
+    LOGIN_ID: /Codebuild/DockerLoginID
 
 phases:
   pre_build:
