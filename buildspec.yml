@@ -12,6 +12,8 @@ phases:
     commands:
       - echo login in to docker
       - docker login -u gorairakesh -p $LOGIN_PASSWORD
+      - echo starting docker daemon
+      - systemctl start docker
   build:
     commands:
       - echo Build started on `date`
