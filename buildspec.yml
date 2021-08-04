@@ -12,11 +12,7 @@ phases:
     commands:
       - echo login in to docker
       - docker login -u gorairakesh -p $LOGIN_PASSWORD
-      - nohup /usr/local/bin/dockerd --host=unix:///var/run/docker.sock --host=tcp://127.0.0.1:2375 --storage-driver=overlay2 &
-      - timeout 15 sh -c "until docker info; do echo .; sleep 1; done"
       - printenv
-      - echo starting docker daemon
-      - systemctl start docker
   build:
     commands:
       - echo Build started on `date`
